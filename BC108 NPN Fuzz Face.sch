@@ -1,0 +1,438 @@
+EESchema Schematic File Version 4
+LIBS:BC108 NPN Fuzz Face-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:TEST_1P W1
+U 1 1 5F64E9AA
+P 5100 4450
+F 0 "W1" H 5100 4720 50  0000 C CNN
+F 1 "AUDIO IN" H 5100 4650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5300 4450 50  0001 C CNN
+F 3 "" H 5300 4450 50  0000 C CNN
+	1    5100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:CP1 C5
+U 1 1 5F64EAEA
+P 5350 4450
+F 0 "C5" H 5375 4550 50  0000 L CNN
+F 1 "2.2.uF" H 5400 4350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5350 4450 50  0001 C CNN
+F 3 "" H 5350 4450 50  0000 C CNN
+	1    5350 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:Q_NPN_CBE Q1
+U 1 1 5F64ECE2
+P 5900 4450
+F 0 "Q1" H 6100 4500 50  0000 L CNN
+F 1 "BC108" H 6100 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 6100 4550 50  0001 C CNN
+F 3 "" H 5900 4450 50  0000 C CNN
+	1    5900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR02
+U 1 1 5F64ED79
+P 6000 4750
+F 0 "#PWR02" H 6000 4500 50  0001 C CNN
+F 1 "Earth" H 6000 4600 50  0001 C CNN
+F 2 "" H 6000 4750 50  0000 C CNN
+F 3 "" H 6000 4750 50  0000 C CNN
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:Q_NPN_CBE Q2
+U 1 1 5F64EDD3
+P 6450 4100
+F 0 "Q2" H 6650 4150 50  0000 L CNN
+F 1 "BC108" H 6650 4050 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 6650 4200 50  0001 C CNN
+F 3 "" H 6450 4100 50  0000 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:R R2
+U 1 1 5F64EF45
+P 6000 5000
+F 0 "R2" V 6080 5000 50  0000 C CNN
+F 1 "100K" V 6000 5000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 5000 50  0001 C CNN
+F 3 "" H 6000 5000 50  0000 C CNN
+	1    6000 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:CP1 C1
+U 1 1 5F64F02A
+P 6900 5600
+F 0 "C1" H 6925 5700 50  0000 L CNN
+F 1 "10uF" H 6925 5500 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6900 5600 50  0001 C CNN
+F 3 "" H 6900 5600 50  0000 C CNN
+	1    6900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5000 5850 5000
+Wire Wire Line
+	5500 4450 5600 4450
+Connection ~ 5600 4450
+Wire Wire Line
+	5100 4450 5200 4450
+Wire Wire Line
+	6000 4100 6250 4100
+Wire Wire Line
+	6000 3700 6000 3900
+Wire Wire Line
+	6000 4650 6000 4750
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:R R1
+U 1 1 5F64FA76
+P 6000 3550
+F 0 "R1" V 6080 3550 50  0000 C CNN
+F 1 "33K" V 6000 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 3550 50  0001 C CNN
+F 3 "" H 6000 3550 50  0000 C CNN
+	1    6000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:RTRIM R4
+U 1 1 5F64FAAF
+P 6550 3550
+F 0 "R4" V 6650 3450 50  0000 L CNN
+F 1 "10K" V 6450 3525 50  0000 L CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Z_Horizontal" V 6480 3550 50  0001 C CNN
+F 3 "" H 6550 3550 50  0000 C CNN
+	1    6550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:R R3
+U 1 1 5F64FB06
+P 6200 2650
+F 0 "R3" V 6280 2650 50  0000 C CNN
+F 1 "330" V 6200 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6130 2650 50  0001 C CNN
+F 3 "" H 6200 2650 50  0000 C CNN
+	1    6200 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 5000 5600 4450
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:C C2
+U 1 1 5F6502EF
+P 7250 3550
+F 0 "C2" H 7275 3650 50  0000 L CNN
+F 1 "10nF" H 7275 3450 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 7288 3400 50  0001 C CNN
+F 3 "" H 7250 3550 50  0000 C CNN
+	1    7250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:POT Volume1
+U 1 1 5F65046D
+P 7250 4500
+F 0 "Volume1" V 7075 4500 50  0000 C CNN
+F 1 "500KA" V 7150 4500 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 7250 4500 50  0001 C CNN
+F 3 "" H 7250 4500 50  0000 C CNN
+	1    7250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4350 7250 3700
+Wire Wire Line
+	7250 2650 7250 3400
+Connection ~ 6000 4100
+Wire Wire Line
+	6550 3700 6550 3800
+Text Notes 6600 3900 0    60   ~ 0
+(4.5V)
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:TEST_1P W2
+U 1 1 5F652DD0
+P 7600 4500
+F 0 "W2" H 7600 4770 50  0000 C CNN
+F 1 "AUDIO OUT" H 7600 4700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7800 4500 50  0001 C CNN
+F 3 "" H 7800 4500 50  0000 C CNN
+	1    7600 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4500 7600 4500
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:POT Bias1
+U 1 1 5F81D229
+P 6550 3050
+F 0 "Bias1" V 6375 3050 50  0000 C CNN
+F 1 "10K" V 6450 3050 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 6550 3050 50  0001 C CNN
+F 3 "" H 6550 3050 50  0000 C CNN
+	1    6550 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2650 6050 2650
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:POT Gain1
+U 1 1 5F85C5BD
+P 6550 5300
+F 0 "Gain1" V 6375 5300 50  0000 C CNN
+F 1 "B1K" V 6450 5300 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 6550 5300 50  0001 C CNN
+F 3 "" H 6550 5300 50  0000 C CNN
+	1    6550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #GND0101
+U 1 1 5F64F20E
+P 6900 6100
+F 0 "#GND0101" H 6900 5850 50  0001 C CNN
+F 1 "Earth" H 6900 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6900 6100 50  0001 C CNN
+F 3 "" H 6900 6100 50  0000 C CNN
+	1    6900 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5000 6550 5000
+Wire Wire Line
+	6550 4300 6550 5000
+Connection ~ 6550 5000
+Wire Wire Line
+	7450 5900 7450 4650
+Wire Wire Line
+	6550 5900 6900 5900
+Wire Wire Line
+	6900 5750 6900 5900
+Connection ~ 6900 5900
+Wire Wire Line
+	6550 5450 6550 5900
+Wire Wire Line
+	6700 5300 6900 5300
+Wire Wire Line
+	6900 5300 6900 5450
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:C C4
+U 1 1 5F85D2EF
+P 5100 3050
+F 0 "C4" H 5125 3150 50  0000 L CNN
+F 1 "100nF" H 5125 2950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 5138 2900 50  0001 C CNN
+F 3 "" H 5100 3050 50  0000 C CNN
+	1    5100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:CP1 C3
+U 1 1 5F85D4A4
+P 4750 3050
+F 0 "C3" H 4775 3150 50  0000 L CNN
+F 1 "10uF" H 4775 2950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 4750 3050 50  0001 C CNN
+F 3 "" H 4750 3050 50  0000 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4450 5700 4450
+Wire Wire Line
+	6000 4100 6000 4250
+Wire Wire Line
+	6000 2650 6000 3400
+Wire Wire Line
+	6550 5000 6550 5150
+Wire Wire Line
+	6900 5900 7200 5900
+Wire Wire Line
+	6900 5900 6900 6100
+$Comp
+L power:Earth #PWR01
+U 1 1 5F8688A6
+P 4950 3400
+F 0 "#PWR01" H 4950 3150 50  0001 C CNN
+F 1 "Earth" H 4950 3250 50  0001 C CNN
+F 2 "" H 4950 3400 50  0001 C CNN
+F 3 "~" H 4950 3400 50  0001 C CNN
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2900 5100 2900
+Wire Wire Line
+	4750 3200 4950 3200
+Wire Wire Line
+	4950 3200 4950 3400
+Connection ~ 4950 3200
+Wire Wire Line
+	4950 3200 5100 3200
+$Comp
+L power:+9V #PWR03
+U 1 1 5F87D14D
+P 4600 2850
+F 0 "#PWR03" H 4600 2700 50  0001 C CNN
+F 1 "+9V" H 4615 3023 50  0000 C CNN
+F 2 "" H 4600 2850 50  0001 C CNN
+F 3 "" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 2900
+Wire Wire Line
+	4600 2900 4600 2850
+Wire Wire Line
+	4300 3100 4350 3100
+Wire Wire Line
+	4350 3100 4350 3200
+Wire Wire Line
+	4350 3200 4500 3200
+Connection ~ 4750 3200
+$Comp
+L Connector:Jack-DC J1
+U 1 1 5F87DAE1
+P 4000 3000
+F 0 "J1" H 4055 3325 50  0000 C CNN
+F 1 "Jack-DC" H 4055 3234 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 4050 2960 50  0001 C CNN
+F 3 "~" H 4050 2960 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F861EEF
+P 4400 2750
+F 0 "#FLG0101" H 4400 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 2924 50  0000 C CNN
+F 2 "" H 4400 2750 50  0001 C CNN
+F 3 "~" H 4400 2750 50  0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F861F46
+P 4500 3200
+F 0 "#FLG0102" H 4500 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 3373 50  0000 C CNN
+F 2 "" H 4500 3200 50  0001 C CNN
+F 3 "~" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	-1   0    0    1   
+$EndComp
+Connection ~ 4500 3200
+Wire Wire Line
+	4500 3200 4750 3200
+Wire Wire Line
+	6550 3200 6550 3400
+Wire Wire Line
+	6400 2650 7250 2650
+Wire Wire Line
+	6350 2650 6400 2650
+Connection ~ 6400 2650
+Wire Wire Line
+	6400 3050 6400 2650
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:TEST_1P W3
+U 1 1 5F873F46
+P 6850 3800
+F 0 "W3" H 6908 3920 50  0000 L CNN
+F 1 "TEST_1P" H 6908 3829 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7050 3800 50  0001 C CNN
+F 3 "" H 7050 3800 50  0000 C CNN
+	1    6850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3800 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	6550 3800 6550 3900
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:TEST_1P W4
+U 1 1 5F8755D6
+P 5750 3900
+F 0 "W4" H 5808 4020 50  0000 L CNN
+F 1 "TEST_1P" H 5808 3929 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5808 3883 50  0001 L CNN
+F 3 "" H 5950 3900 50  0000 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3900 6000 3900
+Connection ~ 6000 3900
+Wire Wire Line
+	6000 3900 6000 4100
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:CP1 C6
+U 1 1 5F872986
+P 7200 5600
+F 0 "C6" H 7225 5700 50  0000 L CNN
+F 1 "10uF" H 7225 5500 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7200 5600 50  0001 C CNN
+F 3 "" H 7200 5600 50  0000 C CNN
+	1    7200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4650 7250 4650
+Wire Wire Line
+	6900 5300 7200 5300
+Wire Wire Line
+	7200 5300 7200 5450
+Connection ~ 6900 5300
+Wire Wire Line
+	7200 5750 7200 5900
+Connection ~ 7200 5900
+Wire Wire Line
+	7200 5900 7450 5900
+Wire Wire Line
+	4600 2900 4750 2900
+Wire Wire Line
+	4300 2900 4400 2900
+Connection ~ 4600 2900
+Wire Wire Line
+	4400 2750 4400 2900
+Connection ~ 4400 2900
+Wire Wire Line
+	4400 2900 4600 2900
+$Comp
+L power:+9V #PWR?
+U 1 1 5F88F56F
+P 6000 2450
+F 0 "#PWR?" H 6000 2300 50  0001 C CNN
+F 1 "+9V" H 6015 2623 50  0000 C CNN
+F 2 "" H 6000 2450 50  0001 C CNN
+F 3 "" H 6000 2450 50  0001 C CNN
+	1    6000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2450 6000 2650
+Connection ~ 6000 2650
+$EndSCHEMATC

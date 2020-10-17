@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BC108-NPN-Fuzz-Face-rescue)(type Legacy)(uri "${KIPRJMOD}/BC108 NPN Fuzz Face-rescue.lib")(options "")(descr ""))
+)
