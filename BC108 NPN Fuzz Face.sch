@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L BC108-NPN-Fuzz-Face-rescue:TEST_1P W1
 U 1 1 5F64E9AA
-P 5100 4450
-F 0 "W1" H 5100 4720 50  0000 C CNN
-F 1 "AUDIO IN" H 5100 4650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5300 4450 50  0001 C CNN
-F 3 "" H 5300 4450 50  0000 C CNN
-	1    5100 4450
+P 4450 4450
+F 0 "W1" H 4450 4720 50  0000 C CNN
+F 1 "AUDIO IN" H 4450 4650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 4450 50  0001 C CNN
+F 3 "" H 4650 4450 50  0000 C CNN
+	1    4450 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -97,8 +97,6 @@ Wire Wire Line
 	5500 4450 5600 4450
 Connection ~ 5600 4450
 Wire Wire Line
-	5100 4450 5200 4450
-Wire Wire Line
 	6000 4100 6250 4100
 Wire Wire Line
 	6000 3700 6000 3900
@@ -155,7 +153,7 @@ L BC108-NPN-Fuzz-Face-rescue:POT Volume1
 U 1 1 5F65046D
 P 7250 4500
 F 0 "Volume1" V 7075 4500 50  0000 C CNN
-F 1 "500KA" V 7150 4500 50  0000 C CNN
+F 1 "A1M" V 7150 4500 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 7250 4500 50  0001 C CNN
 F 3 "" H 7250 4500 50  0000 C CNN
 	1    7250 4500
@@ -435,4 +433,27 @@ $EndComp
 Wire Wire Line
 	6000 2450 6000 2650
 Connection ~ 6000 2650
+$Comp
+L BC108-NPN-Fuzz-Face-rescue:RTRIM R?
+U 1 1 5F958E26
+P 4800 4450
+F 0 "R?" V 4900 4350 50  0000 L CNN
+F 1 "10K" V 4700 4425 50  0000 L CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Z_Horizontal" V 4730 4450 50  0001 C CNN
+F 3 "" H 4800 4450 50  0000 C CNN
+	1    4800 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4450 4650 4450
+Wire Wire Line
+	4950 4450 5200 4450
+Text Notes 4600 4150 0    60   ~ 0
+Set to 1k
+Text Notes 4600 4250 0    39   ~ 0
+Increase until screetch is gone
+Wire Notes Line
+	4650 4250 4650 4350
+Wire Notes Line
+	4650 4350 4750 4350
 $EndSCHEMATC
